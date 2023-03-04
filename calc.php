@@ -43,7 +43,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
                 $input=[];
                 $GLOBALS['currentValue']=0;
              }
-             else if(is_numeric($key) ||$key=="+"||$key=="-"||$key=="*"||$key=="/"||$key=="%"){
+             else if(is_numeric($key) ||$key=="+"||$key=="-"||$key=="*"||$key=="/"||$key=="%"||$key=="("||$key==")"){
                  $input[]=$key;
                  
              }
